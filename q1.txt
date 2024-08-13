@@ -1,0 +1,156 @@
+Question 1
+25 / 25 pts
+What callbacks are executed for the following events?
+
+Activity is partially obscured? 
+onPause
+Activity is fully obscured? 
+onStop
+Activity is disposed of? 
+onDestroy
+Activity is being created or recreated? 
+onCreate
+Activity is starting execution? 
+onStart
+Activity is coming into foreground?  
+onResume
+Create the options menu?  
+onCreateOptionsMenu
+A selection has been made in the options menu?  
+onOptionsItemSelected
+Display the options menu (make changes to the menu here)?  
+onPrepareOptionsMenu
+Answer 1:
+Correct!onPause
+Answer 2:
+Correct!onStop
+Answer 3:
+Correct!onDestroy
+Answer 4:
+Correct!onCreate
+Answer 5:
+Correct!onStart
+Answer 6:
+Correct!onResume
+Answer 7:
+Correct!onCreateOptionsMenu
+Answer 8:
+Correct!onOptionsItemSelected
+Answer 9:
+Correct!onPrepareOptionsMenu
+ 
+Question 2
+10 / 10 pts
+What are the two callbacks that every specialization of SQLiteOpenHelper must implement?
+
+onUpgrade
+onCreate
+Answer 1:
+You AnsweredonUpgrade
+Correct Answer
+onCreate 
+Answer 2:
+You AnsweredonCreate
+Correct Answer
+onUpgrade 
+ 
+Question 3
+10 / 10 pts
+What are the two operations provided by SQLiteOpenHelper to obtain a database connection?
+
+getWriteableDatabase
+getReadableDatabase
+Answer 1:
+You AnsweredgetWriteableDatabase
+Correct Answer
+getReadableDatabase 
+Answer 2:
+You AnsweredgetReadableDatabase
+Correct Answer
+getWritableDatabase 
+ 
+Question 4
+10 / 10 pts
+ What is the main motivation for wrapping a SQLite database with a content provider?
+Your Answer:
+The main motivation for wrapping a SQLite database with a content provider is sharing data between apps. If you want to have content that's available not just within an app, but also available to other apps.
+
+ 
+Question 5
+20 / 20 pts
+What are the two annotations that every entity object class will have in Room?
+
+@PrimaryKey
+
+@Entity
+
+What are the five annotations for database repositories in Room?
+
+@Update
+
+@Insert
+
+@Query
+
+@Dao
+
+@Delete
+
+What are the two attributes that must be specified in the @Database annotation?
+
+version
+
+entities
+
+Answer 1:
+You Answered@PrimaryKey
+Correct Answer
+@Entity 
+Answer 2:
+You Answered@Entity
+Correct Answer
+@PrimaryKey 
+Answer 3:
+You Answered@Update
+Correct Answer
+@Dao 
+Answer 4:
+Correct!@Insert
+Answer 5:
+You Answered@Query
+Correct Answer
+@Delete 
+Answer 6:
+You Answered@Dao
+Correct Answer
+@Update 
+Answer 7:
+You Answered@Delete
+Correct Answer
+@Query 
+Answer 8:
+You Answeredversion
+Correct Answer
+entities 
+Answer 9:
+You Answeredentities
+Correct Answer
+version 
+ 
+Question 6
+15 / 15 pts
+1. What is the use case for ViewModel?
+
+2. What scenario for temporarily persisting UI state does ViewModel not support?
+
+Your Answer:
+1. The use case for ViewModel is to avoid needing to re-query the database as a result of changes to the UI when a device is reoriented. Basically, it gives us caching. It's good to use when there is a lot of data as it is intended to hold a lot of data.
+
+2. ViewModel does not support when the load memory killer kills off the process. You cannot use ViewModel to save the result of a query in case the load memory kills off the process.
+
+ 
+Question 7
+10 / 10 pts
+What are the two arguments to the observe() operation for LiveData?
+Your Answer:
+The two arguments to the observe() operation for LiveData is an instance of LifecycleOwner and an Observer instance.
