@@ -1,0 +1,62 @@
+Question 1
+20 / 20 pts
+What is the difference between a mobile IP network and an (IP-based) mobile ad hoc network?
+Your Answer:
+The difference between a mobile IP network and an IP-based mobile ad hoc network is that a standard mobile IP network needs a fixed infrastructure where the home agent/foreign agent are in a fixed network in the IP network, whereas MANETs are networks without an infrastructure that might be ad hoc, in remote areas, etc. With mobile IP the devices can roam around but the routers are fixed (both the agents and the foreign agents are fixed), but with MANETs both the devices and routers roam around. So, with MANETs, the routers themselves are mobile, which makes routing a challenge. Challenges include varying channel quality, asymmetric connections, etc which are addressed with routing algorithms such as DSDV, DSR, AODV, etc. With mobile IP, it's used as a protocol that the fixed network uses to route the packets to the mobile device from a home agent to a foreign agent through an IP tunnel even though the device is moving around in different networks.
+
+ 
+Question 2
+20 / 20 pts
+What is:
+
+the advantage of ad-hoc demand distance vector routing over dynamic source routing, and
+the advantage of the latter over the former.
+Your Answer:
+The advantage of ad-hoc on demand distance vector routing over dynamic source routing is that the packet header sizes are no longer proportional to the length of the path. The header sizes are fixed.
+The advantage of the latter over the former is that dynamic source routing doesn't necessarily require symmetric links because it can do route discovery in reverse to communicate the route back to the source whereas aodv requires symmetric links.
+ 
+Question 3
+20 / 20 pts
+In directed diffusion for sensor networks, what is the name for:
+
+The messages from sink to source requesting notification of events at that source.
+The route that notification messages take from source to sink.
+Your Answer:
+1. The name for messages from sink to source requesting notification of events at that source is interest
+
+2. The name for the route that notification messages take from source to sink is gradient.
+
+ 
+Question 4
+20 / 20 pts
+What are the names of the following in Mobile IP:
+
+The address of a mobile host on a foreign network.
+The representative of the mobile host on its home network.
+The representative of the mobile host on the foreign network.
+The host that is communicating with the mobile host via mobile IP. 
+Your Answer:
+1. Care-of Address
+
+2. Home Agent
+
+3. Foreign Agent
+
+4. Correspondent Node
+
+ 
+Question 5
+20 / 20 pts
+For the layered naming proposal, what is the terminology for the "name" that an application binds to at each of these points in its communication with a remote service:
+
+When the service is located via service discovery.
+When a transport connection is opened with the service.
+When a network packet is sent to the service.
+ 
+
+Your Answer:
+1. The SID or service identifier
+
+2. EID or end-point identifier
+
+3. IP address
