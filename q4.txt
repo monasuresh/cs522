@@ -1,0 +1,120 @@
+Question 1
+20 / 20 pts
+Give the full name of the following techniques, and what basic technique each one extends.
+
+GMSK.
+QPSK.
+64QAM.
+OFDM.
+Your Answer:
+1. GMSK stands for Gaussian Minimum Shift Keying. It is a form of the technique called Minimum Shift Keying which is an advanced shift keying technique that extends Frequency Shift Keying.
+
+2. QPSK stands for quadrature phase shift keying. It extends the technique called phase shift keying
+
+3. 64QAM stands for 64 Quadrature Amplitude Modulation. It is a form of quadrature amplitude modulation which is a variant on quadrature phase shift keying. It extends both amplitude modulation and phase modulation and uses both phase shifts and amplitude shifts. 
+
+4. OFDM stands for Orthogonal Frequency Division Multiplexing. It extends the technique called multi-channel modulation and frequency division multiplexing. 
+
+ 
+Question 2
+20 / 20 pts
+Name and describe two problems with trying to use CSMA/CD for medium access control in wireless networks.
+
+Your Answer:
+One problem is hidden terminals. This is when a sender may not even be able to sense another sender. So they can't tell that the medium is currently busy with somebody else sending. Both collision detection and carrier sense can fail in wireless networks because of this. For example, if there are 3 radios A, B, and C and B is at some distance between A and C. A sends to B and A is far enough away from C that C cannot receive A. C wants to send to B so it does carrier sense. Because C is too far away from A to detect a signal, the carrier sense fails. There's a collision at B with both A and C transmitting to B. It's not happening at either of the senders A or C, but at B. A is hidden for C. C also doesn't detect the collision because it happens at B.
+
+ 
+
+Another problem is exposed terminals. This is when B is sending to A. C is also within range of B. C wants to send to another terminal that's neither A or B, but when C does carrier sense, C detects that B is sending. C is going to back off sending at this point. B is actually sending to A. C may want to send to another process that may be outside of the range of A and B. C is backing off because it doesn't want to interfere with the signal between A and B. A is outside the range of C therefore waiting is not necessary and C is said to be exposed to B. C is not sending when it should be free to send because it's exposed to B. 
+
+ 
+Question 3
+20 / 20 pts
+Name 3 reservation-based methods for medium access control in wireless networks.
+
+Your Answer:
+The 3 reservation-based methods for medium access control in wireless networks are:
+
+Explicit Reservation - Reservation Aloha - This is an explicit reservation technique. In this technique there are two modes one of which is ALOHA mode for reservation and the other of which is reservation mode for data transmission.
+Implicit Reservation or Packet Reservation Medium Access (PRMA) - This is where a certain number of slots form a frame and the frames are repeated. The stations compete for empty slots according to the slotted aloha principle and once a station reserves a slot successfully, this slot is automatically assigned to the station as long as the station has data to send. As soon as the slot was empty in the last frame, competition for slots starts again.
+Reservation Time Division Multiple Access - This is where every frame consists of N mini-slots and x data-slots. Every station has its own minislots and can reserve up to k data slots using the mini slot. Other stations can send data in unused data-slots according to a round-robin sending scheme
+ 
+Question 4
+20 / 20 pts
+How does 802.11b/g/n try to avoid collisions in its default protocol for MAC? Does this avoid hidden terminals?
+
+Your Answer:
+802.11b/g/n tries to avoid collisions in its default protocol for MAC by employing a protocol for MAC called Distributed Foundation Wireless Medium Access Control. With this, when a sender intends to transmit data to a receiver, it initiates the process by sending a Request To Send packet and awaits a Clear To Send acknowledgement from the receiver. This acknowledgement mechanism ensures the prevention of collisions. Initially the sender is in an idle station. When it's ready to transmit data, it issues an RTS and awaits a CTS. Once the sender receives the CTS it sends the data. It can be confident that no collisions will occur because the receiver has acknowledged its RTS exclusively. After sending the data, the sender awaits an acknowledgement from the receiver which signals successful receipt of the data. After that it reverts to the idle state. In case of corrupted data, it may receive a negative acknowledgement. 
+
+ 
+
+On the receiver side, the system stays idle until an RTS is received and after receiving the RTS, the receiver sends a CTS. It waits for the data to arrive. Once the data is received it responds with an acknowledgement and returns to the idle state. It may also encounter timeouts or corrupted data leading to negative acknowledgements. 
+
+ 
+
+This avoids hidden terminals because for instance in the 3 radios example, when sender A transmits an RTS to receiver B, potential collisions from other senders such as sender C are mitigated. If A's RTS reaches B before any other, B acknowledges A with a CTS and that is broadcasted to everyone. This CTS includes an identifier which specifies the authorized sender. So, after sender C receives the CTS, it will understand that it is not authorized to transmit to B and refrain from doing so. This ensures that A can transmit to B without interference during the reserved time interval. 
+
+ 
+Question 5
+20 / 20 pts
+Consider two senders A and B.  A wants to send 1, B wants to send 0.  A's chipping sequence is 110010, B's chipping sequence is 010110.
+
+What signal does A send?  Assume that "0" is sent as -1, "1" is sent as +1. 
+What signal does B send?
+What is the superimposed signal by combining these two signals?
+What value does receiver C get by combining this superimposed signal with A's chipping sequence?
+What value does receiver C get by combining this superimposed signal with B's chipping sequence?
+Your Answer:
+1. Sender A sends Ad = 1, Ak = 110010 (assign 0 = -1, 1 = +1)
+
+Sending signal As = Ad * Ak =
+
++1 * (+1, +1, -1, -1, +1, -1)
+
+= (+1, +1, -1, -1, +1, -1)
+
+ 
+
+2. Sender B sends Bd = 0, Bk = 010110
+
+(assign 0 = -1, 1 = +1)
+
+Sending signal Bs = Bd * Bk =
+
+-1 * (-1, +1, -1, +1, +1, -1)
+
+= (+1, -1, +1, -1, -1, +1)
+
+ 
+
+3. The superimposed signal is As + Bs
+
+= (+1, +1, -1, -1, +1, -1) + 
+
+   (+1, -1, +1, -1, -1, +1)
+
+= (+2, 0, 0, -2, 0, 0)
+
+ 
+
+4. Ae = (+2, 0, 0, -2, 0, 0) * Ak =
+
+(+2, 0, 0, -2, 0, 0) * (+1, +1, -1, -1, +1, -1) 
+
+= 2 + 0 + 0 + 2 + 0 + 0 = 4
+
+Receiver C gets the value 4
+
+The result is greater than 0, therefore the original bit was 1
+
+ 
+
+5. Be = (+2, 0, 0, -2, 0, 0) * Bk =
+
+(+2, 0, 0, -2, 0, 0) * (-1, +1, -1, +1, +1, -1) 
+
+= -2 + 0 + 0 + -2 + 0 + 0 = -4
+
+Receiver C gets the value -4
+
+The result is less than 0, therefore the original bit was 0
