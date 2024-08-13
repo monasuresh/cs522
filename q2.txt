@@ -1,0 +1,96 @@
+Question 1
+15 / 20 pts
+Use the example of the Google Maps app running on the Android software stack to give examples of:
+
+Implementation model
+Mental model
+Your Answer:
+1. Implementation model:
+
+Examples of implementation model are the hardware layer which is the physical layer consisting of the device's hardware components, the operating system, the android runtime. Google maps is implemented in Java and runs of the Android runtime. Google maps also uses various android frameworks for functionalities like location, sensor handling and network communication. There are also libraries for features like image processing, networking, and ui components. Lastly, there's the application layer where the Google Maps resides which includes the code, assets, and resources that are developed for the app's functionality.
+
+ 
+
+2. Mental Model:
+
+The Google maps app represents a gui with maps, markers, and navigation controls which creates a mental model for users to interact with. The user understands the apps mental model through navigation paterns such as pinch-to-zoom, tap-to-mark, and swipe-to-move. There's also the mental model for location awareness through GPS, Wi-fi and cellular data. The user also has a mental model of searching for locations, businesses, or addresses. Google maps also creates a mental model for proactive information delivery through notification and alerts. 
+
+"location awareness through GPS, Wi-fi and cellular data." ?
+ 
+Question 2
+20 / 20 pts
+What are the three types of scenarios, and what is the purpose of each type?
+Your Answer:
+The three types of scenarios are context scenario, key path scenario and validation scenario. The purpose of a context scenario is to define how a product can serve the needs of the persona. It basically defines the perspective of the persona. The purpose of a key path scenario is to revise context scenarios and describe user interaction with the product. The purpose of the validation scenario is to test solutions. It's for white board design/what if testing. 
+
+ 
+Question 3
+20 / 20 pts
+Give two examples of each of the following kinds of user goals, in each case making reference to a specific mobile app.
+
+Experience
+End goals
+Life goals
+Your Answer:
+1. Experience.
+
+Example 1 - Fitness tracking app such as Fitbit. Here, the experience goal is to feel motivated and accomplished 
+
+Example 2 - Meditation app such as headspace. Here, the experience goal is to feel a sense of inner calm and mindfulness. 
+
+ 
+
+2. End goals 
+
+Example 1 - Travel planning app such as trip advisor. Here the end goal is to plan and execute a memorable vacation.
+
+Example 2 - Language learning app such as Duolingo. Here the end goal is to become proficient in a new language
+
+ 
+
+3. Life goals 
+
+Example 1 - Financial management app such as Mint. Here, the life goal is to achieve financial stability and independence. 
+
+Example 2 - Networking and professional development app such as LinkedIn. Here. the life goal is to build a successful and fulfilling career. 
+
+ 
+Question 4
+20 / 20 pts
+Match up user concerns with the class of user: beginner, intermediate or expert.
+Correct!
+Beginner 
+What type of input should I provide?
+Correct!
+Beginner 
+How do I save my changes?
+Correct!
+Intermediate 
+What is the menu command for doing X?
+Correct!
+Intermediate 
+Is there a context menu fo this?
+Correct!
+Expert 
+What is the keyboard shortcut for this command?
+Correct!
+Expert 
+How can I access my command history?
+ 
+Question 5
+10 / 20 pts
+List the six Design Principles that we discussed in considering UX for mobile app design.
+Your Answer:
+1. Develop stories or scenarios to define requirements
+
+2. Define what the product will do before you design how the product will do it. 
+
+3. In early early stages of design, pretend the interface is magic. 
+
+4. Create a persona of the user around whom you design the user experience of the app and make sure that the represented model matches the users mental model.
+
+5. Identify the data requirements and the functional requirements.
+
+6. From the context scenario, identify the objects, actions, and contexts. 
+
+1. Goal-directed interactions reflect user mental models. 2. Don’t replicate Mechanical-age artifacts in user interfaces without Information-age enhancements. 3. Design principle: Focus the design for each interface on a single primary persona. 4. Don’t make the user feel stupid. 5. Define what the product will do before you design how the product will do it. 6. In early stages of design, pretend the interface is magic.
