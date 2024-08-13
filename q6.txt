@@ -1,0 +1,125 @@
+Question 1
+15 / 20 pts
+How do GPS receivers attempt to deal with the following sources of errors in GPS estimates?
+
+Relatively inaccurate clock on the receiver.
+Dilution of precision in signal trilateration.
+Atmospheric delays in signal propagation.
+Difficulty locating enough satellites.
+Your Answer:
+1. An additional satellite is added for measuring distance. This additional information is used to correct for the error in distance measurements of location when the wrong circles are intersected.
+
+2. The receiver chooses satellites for best position triangulation in this case
+
+3.  GPS receivers use models to account for average delay caused by the troposphere. Some receivers may employ dual-frequency signals to correct for ionospheric delays
+
+4. Four satellites are ideally needed. There are techniques like dead reckoning used by receivers to improve accuracy. 
+
+4. Use Assisted GPS (cell phones).
+ 
+Question 2
+15 / 20 pts
+Match the name of the system below with the approach it took to locating people.
+Correct!
+Active badge 
+Use IR code to broadcast user presence.
+Correct!
+Crickets 
+Estimate location in room based on time of arrival for US following RF signal.
+Correct!
+Active Bats 
+Estimate location in room based on time of arrival of US signals to sensors.
+You Answered
+RADAR 
+Estimate current location based on strength of available AP signals.
+  
+Estimate current location by matching with database of known AP signal characteristics for specific locations.
+You Answered
+PlaceLab 
+Estimate current location by matching with database of known AP signal characteristics for specific locations.
+  
+Estimate current location based on strength of available AP signals.
+Correct!
+Altair 
+Use angle of arrival at wide-area cameras with IR filters.
+Correct!
+Walrus 
+Combine RF (for code) and US to broadcast current room .
+Correct!
+GSM 
+Device location based on difference between signal arrival times at different places in the network.
+ 
+Question 3
+20 / 20 pts
+What are the five sources of ranging errors for satellite data in GPS location estimates?
+Your Answer:
+The five sources of ranging errors for satellite data in GPS location estimates are
+
+1) Ionosphere 4m
+
+2) toposphere 0.7m 
+
+3) satellite position data 2.1m
+
+4) satellite clock 2.1m
+
+5) multipath 1.4m
+
+ 
+Question 4
+15 / 20 pts
+What is the advantage of angle of arrival for estimating location?
+What is the advantage of time difference of arrival over time of arrival?
+What is the advantage of signal fingerprinting over signal strength modeling?
+What is the advantage of signal strength modeling over signal fingerprinting?
+Your Answer:
+1. The advantage of angle of arrival is it's robust to multi-pad effects. 
+
+2. The advantage of time difference of arrival over time of arrival is TDOA does not require a reliable clock at the receiver. TDOA works by comparing the time differences between signals arriving at different base stations and eliminates the need for a reliable clock because it focuses on the difference in arrival times rather than absolute time measurement. 
+
+3. Signal strength fingerprinting has a lower setup cost, cellular base stations used in signal fingerprinting are more stable and less likely to be changed or turned off when compared to Wi-Fi access points used in signal strength modeling. You also don't need the location of every access point
+
+4. Signal strength modeling gives increased coverage. It's easier to set up the infrastructure.
+
+3. Signal fingerprinting: Better accuracy.
+ 
+Question 5
+15 / 20 pts
+For each of the above systems, specify whether or not it inherently preserves the privacy of the users whose location is being estimated.
+
+Active Badge: false .
+Crickets: true .
+Active Bats: false .
+RADAR: false .
+PlaceLab: false .
+Altair: false .
+Walrus: true .
+GSM TDOA: false .
+Answer 1:
+Correct!
+false 
+Answer 2:
+Correct!
+true 
+Answer 3:
+Correct!
+false 
+Answer 4:
+Correct Answer
+true 
+You Answered
+false 
+Answer 5:
+Correct Answer
+true 
+You Answered
+false 
+Answer 6:
+Correct!
+false 
+Answer 7:
+Correct!
+true 
+Answer 8:
+Correct!
+false 
