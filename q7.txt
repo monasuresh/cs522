@@ -1,0 +1,98 @@
+Question 1
+15 / 15 pts
+Who are the five classes of stakeholders in cellular telephone security?
+Your Answer:
+The five classes of stakeholders in cellular telephone security are 
+
+1. Mobile Network Operators
+
+2. OS/Handset Manufacturers
+
+3. Enterprises
+
+4. App Developers
+
+5. End Users
+
+ 
+Question 2
+15 / 15 pts
+What are the five components of a typical cellphone architecture?
+Your Answer:
+The five components of a typical cellphone architecture are:
+
+1. Application Operating System
+
+2. Baseband Operating System
+
+3. Modem and radio network stack
+
+4. SIM Card
+
+5. Hardware Interfaces and features such as bluetooth, GPS, Cameras, display, keyboard.
+
+ 
+Question 3
+30 / 30 pts
+Explain (one sentence each) what the three forms of jailbreaking are.  Which is the most desirable form of jailbreaking for the end user?
+
+Explain (one sentence each) what the three forms of exploits are that are used to jailbreak iPhones.
+Why are iPhone users urged to "save their SHSH blobs"?
+Your Answer:
+The three forms of jailbreaking are
+
+1. Tethered - this is where you cause the signature check to fail and the loader hangs, the device hangs in recovery mode and you're able to inject your own kernel into the boot process and start things up - it requires the device to be tethered to the laptop
+
+2. Semi-tethered - This is where you can start the device without being tethered to the laptop, but you need to boot from tethered computer to run your own add-ons.
+
+3. Untethered - This is where you jailbreak the device and the device stays jailbroken after rebooting it. iBoot is bypassed during system reboot through a lower level boot rom exploit and you get complete control of the device.
+
+ 
+
+The most desirable form of jailbreaking is untethered.
+
+ 
+
+The three forms of exploits used to jailbreak iphones are
+
+1. Userland exploits - This requires a tethered connection and targets vulnerabilities in user-space applications like Safari to gain access to the file system.
+
+2. iBoot exploits - This targets the iBoot boot loader to bypass signature checks and boot a custom operating system and allows for s
+
+3. Boot ROM exploits - This exploit targets the secure ROM and allows for complete control of the device by installing a custom low-level boot loader which can't be fixed via software updates and requires hardware replacements to patch.
+
+ 
+
+iPhone users are urged to save their SHSH blobs because the shsh blobs are necessary for downgrading to a previous firmware version. By saving shsh blobs, users can bypass Apple's restrictions on firmware updates and allow them to revert to a preferred iOS that is more compatible with jailbreaking and other customizations.
+
+ 
+Question 4
+30 / 30 pts
+What are the eight recommended best practices for Android security?
+Your Answer:
+The eight recommended best practices for Android Security are:
+
+1. Always set android exported equals false for components
+
+2. Components without access permissions should be exceptional cases.
+
+3. Always specify access permissions on intent broadcasts, unless explicit destination and use LocalBroadcastManager for broadcasts done within an app.
+
+4. Only use pending intents as delayed callbacks.
+
+5. Always define separate read and write permissions.
+
+6. Use check permissions to mediate administrative operations.
+
+7. Judiciously request permissions for protected APIs.
+
+8. Use signature permissions for application suites and use dangerous permissions otherwise.
+
+ 
+Question 5
+5 / 10 pts
+What are two ways that Android security can be enforced dynamically, i.e., under program control, going beyond the permissions that may be required in the manifest?
+Your Answer:
+Android security can be enforced dynamically through service hooks/checking permissions in the code. This is runtime permission checking on certain operations in the service/component and you can use checkPermissions(). Another way is by creating separate services where sensitive operations are split off into a separate service and specify permissions on that.
+
+1. Specify access permission on Intent broadcasts (accept local broadcast as an answer) 2. Call checkPermission() to check permissions of someone invoking a service.
