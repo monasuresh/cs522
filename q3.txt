@@ -1,0 +1,75 @@
+Question 1
+35 / 35 pts
+Name four techniques for multiplexing a radio medium between several different communication channels. Give (brief) examples of how each approach is used in mobile telephone networks.
+Your Answer:
+The four techniques for multiplexing a radio medium between several different communication channels are:
+
+space division multiplexing
+time multiplexing
+frequency multiplexing
+code multiplexing
+ 
+
+Space division multiplexing: With regards to space division multiplexing, communication channels are separated from each other physically in space. Because of the physical separation, the signals are less likely to interfere with one another. The available space is divided and allows for the transmission of user data using the same transmission channel at the same time. In mobile phone networks, SDM is based on several antenna beams where the various antenna beams cover different areas. This allows for the sending of several different signals, one per beam at the same time, same frequency, and same code. Because the signals travel through different paths because of physical separation of the antennas, they are less likely to interfere with each other. An example of this used in mobile phone networks is MIMO which uses multiple antennas on the base station and phone side which act like independent data pips. MIMO creates separate channels in space.
+
+ 
+
+Frequency multiplexing: This is where each communication channel is allocated to its own frequency in the spectrum. You get a certain band of the spectrum and there is a collection of frequencies on which to transmit data and the data is encoded on that. Mobile phone networks rely on frequency multiplexing to allow numerous calls to happen simultaneously within a limited radio frequency spectrum. Each channel has a specific frequency range and mobile devices use carrier frequencies within their allocated channels. An example of this used in mobile phone networks is 2G GSM networks where each conversation is assigned a unique carrier frequency within the allocated spectrum and multiple conversations occur simultaneously without interference. 
+
+ 
+
+Time multiplexing: With regards to time multiplexing, you don't just give a communication channel the spectrum all the time, but you give it the whole spectrum for a certain amount of time. Time multiplexing prevents data collisions because the data is not all at the same place at the same time. There is sharing of the spectrum to several frequencies and each communication channel uses part of the spectrum for a certain period of time. An example of this used in mobile phone networks is TD-LTE which is designed to provide high-speed wireless data transmission in mobile networks. It uses time multiplexing techniques to enable efficient sharing of the radio spectrum between multiple users. 
+
+ 
+
+Code multiplexing: The idea behind code multiplexing is that all communication channels are using the same spectrum at the same time. Each communication channel has its own separate unique code. As you transmit, you're coding your communications so that the receiver can extract coded signals from the spectrum. Multiple users share the same frequency band instead of being assigned individual channels. Each user's signal is spread out over a wider bandwidth using a specific code and all users transmit their coded signals simultaneously on the same frequency. With regards to an example in mobile phone networks, the most popular application of code multiplexing is CDMA technology. The code division multiplexing allots a unique code to each channel so that each channel can utilize a similar spectrum at the same time in CDMA. 
+
+ 
+Question 2
+35 / 35 pts
+What is the purpose of digital modulation? Name three basic techniques for digital modulation.
+
+What is the purpose of analog modulation? Name three basic techniques for analog modulation.
+Your Answer:
+The purpose of digital modulation is to translate digital data into an analog baseband signal to translate data over a communication channel. It is used to transfer a digital bit stream over an analog channel at a high frequency. This allows for transmitting signals generated in a digital circuit across a physical medium. 
+
+ 
+
+The three basic techniques are
+
+Amplitude shift keying where you shift the amplitude as a way of encoding data
+Frequency shift keying where you change the frequency to encode data
+phase shift keying where you change the coordinate in the phase state space/domain as a way of encoding data
+ 
+
+The purpose of analog modulation is to transfer a low frequency analog signal over a signal with a higher frequency. Once you convert a digital signal to a baseband signal there may be a mismatch between the actual frequency on which you are transmitting and the bandwidth of the data you want to transmit. Analog modulation is concerned with shifting the center frequency of a baseband signal up to the radio carrier. 
+
+ 
+
+Three basic techniques for analog modulation are:
+
+Amplitude modulation where the wave signal is transmitted by modulating the amplitude of the signal
+Frequency modulation where information is encoded in a carrier wave by varying the frequency of the wave
+Phase modulation where the phase of the signal is modulated and message signals are encoded as variations of the phase of the carrier wave. 
+ 
+Question 3
+30 / 30 pts
+What is the purpose of spread spectrum?
+
+Name and briefly describe two techniques for spread spectrum.
+Your Answer:
+The purpose of spread spectrum is for transmitting in a narrow frequency range and when there is fading in that frequency range so the signal is getting clobbered. Instead of putting all your eggs in one basket, it's better to spread things around. For the same amount of power, the signals are spread out over several frequencies and transmit on those frequencies. If there is a frequency dependent fading, information will be lost on those frequencies, but information can be recovered on the frequencies that get through. The advantage is that interference will be spread over several frequencies. 
+
+ 
+
+Two techniques for spread spectrum are:
+
+direct sequence spread spectrum
+frequency hopping spread spectrum
+ 
+
+Direct sequence spread spectrum: This is where you take the signal and XOR each bit in that signal with a pseudorandom number called a chipping sequence to produce a spread spectrum signal which goes through the modulator. The bandwidth of the resulting signal is the product of the length of the chipping sequence with the bandwidth of the original digital signal. The original narrow band signal is spread out over several frequencies. The modulator shifts it to the actual frequency on which you are going to transmit. On the receiver side, the analog demodulator receives the signals off of the antenna and the chipping sequence is reconstructed on the receiver side. Reconstruction is done using an integrator and correlator which sums up the sample values that are received in the signal. Coding theory is used to reconstruct the original data from the actual signal that was received using thresholds. 
+
+ 
+
+Frequency hopping spread spectrum: With this technique, the user data is modulated to a narrow band signal and the frequency synthesizer takes a pseudorandom hopping sequence which is used to produce a spread spectrum transmit signal. The pseudorandom hopping sequence determines the frequency changes that are done. Frequency hopping spread spectrum implements both frequency multiplexing and time multiplexing. The data is on a particular frequency for a short period of time and then it hops to another frequency. It uses only a small portion of the spectrum at any given time. The time spent on the frequency is called the dwell time. Part of the signal of the narrowband signal is sent on different frequencies as frequency hopping is done. The signal is spread out over several broadband of frequencies. On the receiving site, there's a demodulator which receives a signal with the hopping sequence which is fed into the frequency synthesizer. The narrowband signal is reconstructed and from that narrowband signal a digital demodulator is used to reconstruct the original data. There can be fast frequency hopping and slow frequency hopping.
